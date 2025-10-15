@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <base href="$FLUTTER_BASE_HREF">
+
+  <meta charset="UTF-8">
+  <meta content="IE-Edge" http-equiv="X-UA-Compatible">
+  <meta name="description" content="A new Flutter project.">
+
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="parana">
+  <link rel="apple-touch-icon" href="icons/Icon-192.png">
+
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <title>parana</title>
+  
+  <meta name="google-signin-client_id" content="646855607709-jabd4tf9lacmgcqdird7rup7uj2v40kd.apps.googleusercontent.com">
+  
+  <link rel="manifest" href="manifest.json">
+
+  <script>
+    const serviceWorkerVersion = null;
+  </script>
+  <script src="flutter.js" defer></script>
+</head>
+<body style="background-color: #a4a6a8;"> 
+  <script src="https://t1.kakaocdn.net/kakao_js_sdk/2.7.1/kakao.min.js"
+  integrity="sha384-dPuE23cCioDSSJHongIKkdpu5sCrUN5DD0i5ZN5EBCI7e4asD_CsmBCB/WJ_IabI" crossorigin="anonymous"></script>
+  <script>
+    window.addEventListener('load', function(ev) {
+      // ✅ 'useHtml' 변수를 삭제하고 렌더러를 'canvaskit'으로 고정합니다.
+
+      _flutter.loader.loadEntrypoint({
+        serviceWorker: {
+          serviceWorkerVersion: serviceWorkerVersion,
+        },
+        onEntrypointLoaded: function(engineInitializer) {
+          let config = {
+            renderer: "canvaskit" // ✅ 항상 canvaskit을 사용하도록 직접 지정
+          };
+          engineInitializer.initializeEngine(config).then(function(appRunner) {
+            appRunner.runApp();
+          });
+        }
+      });
+    });
+  </script>
+</body>
+</html>

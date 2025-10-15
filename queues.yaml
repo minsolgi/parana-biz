@@ -1,0 +1,11 @@
+# queues.yaml
+
+specVersion: v1
+queues:
+  - name: imagequeue # ❗️ index.ts의 QUEUE_NAME과 동일해야 합니다.
+    rateLimits:
+      maxConcurrentDispatches: 1
+      maxDispatchesPerSecond: 0.02222 # 1 / 45초 ≈ 0.02222
+    retryConfig:
+      maxAttempts: 3 # 기본 재시도 횟수 (조정 가능)
+      minBackoffSeconds: 5

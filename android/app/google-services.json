@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "526266002446",
+    "project_id": "parana-a4d45",
+    "storage_bucket": "parana-a4d45.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:526266002446:android:42bb3fe7dcb24d3d68605f",
+        "android_client_info": {
+          "package_name": "com.example.parana"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDBzfC4iR8N3FhoHHMfdTVEkBaNRwo5uac"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
