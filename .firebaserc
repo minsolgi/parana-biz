@@ -1,5 +1,8 @@
 {
   "projects": {
-    "default": "parana-v2"
-  }
+    "default": "parana-biz",
+    "parana-biz": "parana-biz"
+  },
+  "targets": {},
+  "etags": {}
 }

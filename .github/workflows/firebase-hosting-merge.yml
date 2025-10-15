@@ -15,6 +15,6 @@ jobs:
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
-          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PARANA_V2 }}
+          firebaseServiceAccount: ${{ secrets.FIREBASE_SERVICE_ACCOUNT_PARANA_BIZ }}
           channelId: live
-          projectId: parana-v2
+          projectId: parana-biz
